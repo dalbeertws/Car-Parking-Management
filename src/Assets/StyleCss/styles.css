@@ -1,0 +1,1576 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100&family=Source+Serif+4:opsz,wght@8..60,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #4e445c;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+.parking-map-wrapper {
+  height: calc(100vh - 265px);
+}
+
+.login-outerdiv {
+  height: calc(100vh - 80px);
+  background-image: url("../Images/loginbg.svg");
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.login-outerdiv .loginsection {
+  max-width: 575px;
+  padding: 38px 39px 70px 39px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.logintitle .logo {
+  max-width: 136px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.change-div .MuiOutlinedInput-root {
+  padding-right: 0px !important;
+}
+
+.change-password-logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.logintitle .logotitle {
+  color: #4e445c;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 25px 10px;
+}
+
+.change-div {
+  overflow: hidden;
+}
+
+.change-password-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginlabel {
+  margin-bottom: 5px;
+  display: block;
+  color: #4e445c;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.loginformcontrol {
+  padding: 0 0 24px 0;
+  color: #4e445c;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.change-div p {
+  margin: 0 !important;
+  background-color: #fff;
+}
+
+.change-password-control {
+  padding: 0 0 24px 0;
+  color: #4e445c;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logininput {
+  width: 100%;
+  color: #4e445c;
+  font-size: 16px;
+  padding: 4px 20px;
+  height: 55px;
+  border-radius: 5px;
+}
+
+.rememberme {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0 19px 0;
+  align-items: center;
+  color: #4e445c;
+  text-align: center;
+}
+
+.doclabel {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.doclabel span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.LoginButton {
+  margin-top: 18px;
+}
+
+.change-password-btn-div {
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.loginbuttoncontrol {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  background: var(--blue-gradient,
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      linear-gradient(90deg, #1d91de 0%, #1d47a9 100%));
+  background-image: linear-gradient(to right,
+      #1d91de,
+      #1d47a9,
+      #1d47a9,
+      #1d91de);
+  padding: 18px 20px;
+  background-size: 300% 100%;
+  width: 100%;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.change-password-buttoncontrol {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 100%;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  background: var(--blue-gradient,
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      linear-gradient(90deg, #1d91de 0%, #1d47a9 100%));
+  background-image: linear-gradient(to right,
+      #1d91de,
+      #1d47a9,
+      #1d47a9,
+      #1d91de);
+  background-size: 300% 100%;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.MuiDateRangeCalendar-monthContainer .MuiPickersSlideTransition-root {
+  min-height: 507px !important;
+}
+
+.loginbuttoncontrol:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.loginbuttoncontrol:focus {
+  outline: none !important;
+}
+
+.change-password-buttoncontrol:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+input[type="checkbox"]+label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  font-family: "Inter", sans-serif;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: transparent;
+  transition: 0.2s;
+}
+
+input[type="checkbox"]+label:active:before {
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked+label:before {
+  background-color: #00aa48;
+  border-color: #00aa48;
+  color: #fff;
+}
+
+input[type="checkbox"]:disabled+label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.logininput:focus-visible {
+  outline: none;
+}
+
+.loginfooter {
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #fff;
+  padding: 15px 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loginfooter span {
+  color: rgba(0, 0, 0, 0.33);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.sectiontitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0px 19px 0px;
+  align-items: center;
+  color: #4e445c;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.sectiontitle .titletag {
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  display: inline-block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.loader-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.email-box {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: "...";
+}
+
+.section-inner div {
+  margin: 0px;
+}
+
+.section-inner {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1.5px solid rgba(78, 68, 92, 0.1);
+  background: #fff;
+}
+
+.section-inner-workload {
+  position: relative;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1.5px solid rgba(78, 68, 92, 0.1);
+  background: #fff;
+  overflow: hidden;
+  min-width: 250px;
+}
+
+.section-inner .MuiDataGrid-root {
+  border: 0;
+}
+
+.workload-loder-height {
+  position: relative;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1.5px solid rgba(78, 68, 92, 0.1);
+  background: #fff;
+  height: 830px;
+}
+
+.section-inner .MuiDataGrid-columnHeaders {
+  background-color: #f3f5fb;
+  border-radius: 8px;
+  border: 0;
+}
+
+.section-inner .MuiBox-root .selectstatus {
+  border-radius: 50px;
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #f3f5fb;
+  width: 100%;
+  padding: 6px 50px 6px 20px;
+  min-width: 150px;
+  stroke-width: 2.5px;
+  color: #4e445c;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  -webkit-appearance: none;
+}
+
+.section-inner .custom-table .actions {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.section-inner .custom-table .actionitems {
+  border-radius: 50%;
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #f3f5fb;
+  padding: 9px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  color: #4e445c;
+  cursor: pointer;
+}
+
+.addbuttoncontrol {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: 5px;
+  border-radius: 50px;
+  padding: 12px 19px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 7px 7px 12px 0px #1d47a926;
+  background-image: linear-gradient(to right,
+      #1d91de,
+      #1d47a9,
+      #1d47a9,
+      #1d91de);
+  background-size: 300% 100%;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.addbuttoncontrol svg {
+  font-size: 24px;
+}
+
+.addbuttoncontrol:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.password-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 14px 2px 23px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #f3f5fb;
+  width: 100%;
+  max-width: 184px;
+  height: 42px;
+}
+
+.passwordtext {
+  font-size: 21px !important;
+  font-family: "Inter", "sans-serif" !important;
+}
+
+.open-popup {
+  background-color: #000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+.close-popup {
+  display: none;
+}
+
+.section-inner .custom-table p {
+  font-size: 16px;
+  font-family: "Inter", "sans-serif" !important;
+
+  color: #4e445c;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.section-inner .custom-table strong span {
+  font-size: 18px !important;
+  font-family: "Inter", sans-serif !important;
+  text-transform: none !important;
+  color: #4e445c;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 54px;
+}
+
+.section-inner .custom-table .MuiDataGrid-row .MuiDataGrid-cell {
+  /* height: calc(100vh - 130px) !important; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none !important;
+}
+
+.section-inner .custom-table .password-section p {
+  line-height: 1.4;
+  font-size: 16px !important;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main_wrrpr.active .sidebar_foot_li {
+  display: none;
+}
+
+.popup-section .MuiPaper-elevation {
+  width: 100%;
+  max-width: 642px;
+  border-radius: 30px;
+  padding: 26px 46px 26px 46px;
+}
+
+.popup-section .MuiPaper-elevation .popup-title {
+  width: 100%;
+  text-align: center;
+  font-family: "Inter", "sans-serif";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 19px;
+  color: #4e445c;
+}
+
+.popup-section .MuiPaper-elevation .popup-title-cross {
+  background: #fff;
+  width: 22%;
+  text-align: right;
+  font-family: "Inter", "sans-serif";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.imagepopup-section .MuiPaper-elevation .popup-title-cross {
+  background: #fff;
+  width: 22%;
+  text-align: right;
+  font-family: "Inter", "sans-serif";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.popup-section .popup-title-cross button img {
+  max-width: 18px;
+}
+
+.imagepopup-section .popup-title-cross button img {
+  max-width: 18px;
+}
+
+.popup-section .popup-title-cross button:hover {
+  background-color: #fff;
+}
+
+.popup-section .MuiPaper-elevation .popup-body {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.model-input {
+  padding-bottom: 21px;
+}
+
+.changepassword-outerdiv .change-password-section {
+  overflow: hidden;
+}
+
+.Mui-error {
+  margin-left: 0px !important;
+}
+
+.passwordtitle {
+  overflow: hidden;
+}
+
+.model-input1 {
+  width: 100%;
+  float: left;
+  padding-bottom: 30px;
+  padding-top: 11px;
+  position: relative;
+}
+
+.parking-info .model-input1 {
+  padding-bottom: 20px;
+}
+
+.model-input-full {
+  width: 100%;
+  position: relative;
+}
+
+.popup-label {
+  display: block;
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 5px;
+}
+
+.btncontrol1 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+  color: #1d91de;
+  border: 1.5px solid #1d91de;
+  background: #fff;
+  padding: 12px 40px;
+  cursor: pointer;
+  box-shadow: 7px 7px 12px 0px rgba(29, 71, 169, 0.15);
+}
+
+span.password-toggle {
+  position: absolute;
+  top: 47%;
+  right: 2%;
+  color: rgba(78, 68, 92, 0.5);
+  width: 100%;
+  max-width: 23px;
+  cursor: pointer;
+}
+
+.popup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btncontrol {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+
+  padding: 12px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 7px 7px 12px 0px #1d47a926;
+
+  background-image: linear-gradient(to right,
+      #1d91de,
+      #1d47a9,
+      #1d47a9,
+      #1d91de);
+
+  background-size: 300% 100%;
+
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.btncontrol:hover {
+  /* background: var(--blue-gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(0deg, #1d91de 0%, #1d47a9 100%)) !important; */
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.popup-section .css-ypiqx9-MuiDialogContent-root {
+  padding: 0;
+}
+
+.row-popup {
+  gap: 26px !important;
+  display: flex;
+}
+
+.popup-input {
+  width: 100%;
+  max-width: 260px;
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px 17px;
+  line-height: 1.4;
+  outline: none !important;
+}
+
+.popup-input input {
+  border-radius: 8px;
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #f3f5fb;
+}
+
+.popup-input1 {
+  border-radius: 8px;
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #f3f5fb;
+  width: 100%;
+  max-width: 550px;
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 18px;
+  font-weight: 400;
+  padding: 6px 17px;
+  line-height: 1.4;
+  outline: none !important;
+}
+
+.model-input1 .popup-input1 {
+  border-radius: 8px;
+  border: 1px solid rgba(78, 68, 92, 0.1);
+
+  width: 100%;
+  max-width: 550px;
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.4;
+  outline: none !important;
+  position: relative;
+  display: flex;
+  -webkit-appearance: none;
+}
+
+.css-1p9kq9s-MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within,
+.css-1p9kq9s-MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+}
+
+.css-wop1k0-MuiDataGrid-footerContainer {
+  border-top: none !important;
+}
+
+.crossedit {
+  background: #18408c;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #17418e;
+  position: absolute;
+  /* z-index: 2 !important; */
+  bottom: 8.5px;
+  right: 0px;
+  width: 16px !important;
+  height: 14px !important;
+}
+
+.css-1kes65q-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #fff;
+}
+
+.parking-info {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px 25px;
+  position: relative;
+}
+
+.parking-section {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  transition: 0.3s;
+  transform: translatex(100%);
+}
+
+.parking-info-main span {
+  color: #4e445c;
+  text-align: center;
+  font-family: "Inter", "sans-serif";
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 20px;
+}
+
+.parking-section-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: rgb(0 0 0 / 40%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.parking-section.active {
+  transform: translatex(0%);
+  overflow: auto;
+}
+
+.parking-info-header {
+  text-align: left;
+}
+
+.parkingmap-body-front {
+  background-color: #f3f5fb;
+  padding: 17px 5px;
+  text-wrap: nowrap;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 0;
+  min-width: 90px;
+  text-align: center;
+  width: 80px;
+  font-size: 18px;
+  color: #4e445c;
+  font-weight: 500;
+}
+
+.parking-info-header span {
+  color: #4e445c;
+  text-align: center;
+  font-family: "Inter", "sans-serif";
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+
+.divider {
+  border: 1px solid;
+  border-radius: 50px;
+  opacity: 0.1;
+  background: #3f3af0;
+  margin-top: 7px;
+  margin-bottom: 27px;
+  box-shadow: 7px 7px 12px 0px rgba(137, 107, 250, 0.25);
+}
+
+.parking-details {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 358px;
+  padding: 22px 25px 29px 25px;
+  border-radius: 8px;
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #f3f5fb;
+  padding-bottom: 30px;
+}
+
+.parking-details .popup-input1 {
+  background: #fff;
+}
+
+.parking-select-date .MuiInputBase-input:hover {
+  border: none !important;
+}
+
+.parking-details .btncontrol {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1.5px solid var(--Blue-Gradient, #1d91de);
+  box-shadow: 7px 7px 12px 0px rgba(29, 71, 169, 0.15);
+  padding: 12px 19px;
+  width: 100%;
+  max-width: 112px;
+  min-width: 112px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.parking-details .popup-button {
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  margin: 0;
+}
+
+.parking-info-footer .btncontrol1 {
+  max-width: 147px;
+  width: 100%;
+}
+
+.parking-info-footer .popup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+}
+
+.css-rtrcn9-MuiTablePagination-root:last-child {
+  padding-top: 13px !important;
+}
+
+.parking-info-footer .footer-text p {
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.parking-info-body {
+  padding-bottom: 30px;
+}
+
+.parking-info-footer .footer-text span {
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.parking-info-footer .footer-text {
+  padding-bottom: 40px;
+}
+
+.parking-header .header-icons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.parking-header .header-icons img {
+  width: 22px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.parkingmap-body .parkingmap-body-ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.menu-icons ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.menu-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu-icons li::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 1px;
+  height: 20px;
+  background: #dde5fd;
+}
+
+.menu-icons li:last-child::after {
+  display: none;
+}
+
+.menu-icons li svg {
+  width: 20px;
+  height: 20px;
+}
+
+.parkingmap-body-item {
+  border-radius: 10px;
+  border: 2px solid #dde5fd;
+  background: #fff;
+  width: 180px;
+  max-width: 187px;
+  padding: 12px 13px;
+}
+
+.rainbow {
+  position: relative;
+  z-index: 0;
+  border-radius: 15px;
+  padding: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.rainbow:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #34388f, #1d47a9, #1d91de);
+  filter: blur(10px);
+  z-index: -1;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes animate {
+  0% {
+    background: linear-gradient(to right, #1d91de, #34388f, #1d47a9);
+  }
+
+  25% {
+    background: linear-gradient(to right, #1d47a9, #1d91de, #34388f);
+  }
+
+  50% {
+    background: linear-gradient(to right, #3b37b5, #1d47a9, #1d91de);
+  }
+
+  75% {
+    background: linear-gradient(to right, #1d91de, #3b37b5, #1d47a9);
+  }
+
+  100% {
+    background: linear-gradient(to right, #1d47a9, #1d91de, #3b37b5);
+  }
+
+}
+
+.parkingmap .sectiontitle {
+  padding-bottom: 10px;
+}
+
+.parkingmap-body-item-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+}
+
+.parkingmap-body-item-header span {
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 140px;
+  text-overflow: ellipsis;
+}
+
+.menu-icons svg {
+  width: 52px;
+}
+
+.parkingmap-footer {
+  border: 1px solid rgba(78, 68, 92, 0.1);
+  background: #fff;
+  padding: 19px 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 300px);
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.parkingmap-footer span {
+  color: #4e445c;
+  font-family: "Inter", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.parkingmap-footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.parkingmap-footer svg {
+  margin-right: 7px;
+  width: 14px;
+  height: 14px;
+}
+
+.MuiInputBase-colorPrimary popup-input1 {
+  background-color: #f3f5fb;
+}
+
+.parkingmap-body-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 136px;
+  text-align: center;
+}
+
+.parkingmap-body-ul {
+  display: flex;
+  gap: 15px;
+}
+
+.parking-map-wrapper {
+  overflow: scroll;
+  height: calc(100vh - 180px);
+  position: relative;
+  width: 100%;
+  user-select: none !important;
+  touch-action: pan-x pan-y !important;
+
+}
+
+.parking-map-wrapper-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0px 0px 0px;
+}
+
+
+@media screen and (max-width: 1250px) {
+  .parkingmap .sectiontitle {
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    padding: 3px 0px 19px 0px;
+    align-items: flex-start;
+    color: #4e445c;
+    flex-direction: column;
+  }
+
+  .recenter-cls {
+    bottom: 139px;
+  }
+
+  .parking-header .header-list span {
+    font-size: 13px;
+  }
+
+  .lang-button {
+    font-size: 13px;
+  }
+
+  .sectiontitle .titletag {
+    font-size: 24px;
+  }
+
+  .change-password-section {
+    position: unset;
+    top: 50%;
+    left: 50%;
+    transform: unset;
+  }
+
+  .customCalendar button {
+    font-size: 14px;
+  }
+
+  .MuiDateRangeCalendar-monthContainer .css-flbe84-MuiDayCalendar-weekContainer {
+    gap: 2px !important;
+  }
+
+  .MuiDateRangeCalendar-monthContainer .css-i5q14k-MuiDayCalendar-header {
+    gap: 6px !important;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .customCalendar {
+    display: block !important;
+  }
+
+  .recenter-cls {
+
+    bottom: 149px;
+  }
+
+  .MuiDateRangeCalendar-monthContainer .MuiPickersSlideTransition-root {
+    min-height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .customCalendar {
+    display: flex !important;
+    gap: 10px !important;
+  }
+
+  .parking-info .innerselect>div {
+    padding: 12px 0px !important;
+  }
+
+  .parking-select-date .MuiInputBase-input {
+    height: 12px !important;
+  }
+
+  .parking-header .header-icons {
+    gap: 20px;
+  }
+
+  .parking-map-search-right {
+    flex-direction: column;
+    align-items: self-end;
+    margin-top: -35px;
+    min-width: 300px;
+  }
+
+  .parking-map-search-right .parking-header {
+    order: 1;
+  }
+
+  .parking-map-search-right .search-field {
+    margin-right: 0;
+    margin-left: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .parking-header .header-icons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .parkingmap-footer ul {
+    gap: 10px;
+  }
+
+  .parking-header .header-icons {
+    margin-top: 10px;
+  }
+
+  .parkingmap .sectiontitle {
+    padding: 3px 0 10px 0;
+  }
+
+  .customCalendar button {
+    font-size: 18px;
+  }
+
+  .section-inner-workload .MuiPickersArrowSwitcher-root {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .customCalendar {
+    display: block !important;
+  }
+
+  .parking-map-search-right {
+    flex-direction: column;
+    align-items: self-end;
+    margin-top: -35px;
+    min-width: 320px;
+  }
+
+  .recenter-cls {
+    bottom: 152px;
+  }
+
+  .parkingmap .sectiontitle {
+    display: block;
+    text-align: left;
+  }
+
+  .parking-map-search-right .parking-header {
+    order: 1;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .sectiontitle .titletag {
+    font-size: 24px;
+  }
+
+  .work-footer-main {
+    display: none !important;
+  }
+
+  .parking-header .header-icons {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .parkingmap-footer {
+    display: none;
+  }
+
+  .parking-header .header-list {
+    font-size: 14px;
+  }
+
+  .parking-info {
+    padding: 30px;
+  }
+
+  .logintitle .logotitle {
+    font-size: 26px;
+  }
+
+  .MuiDateRangeCalendar-monthContainer .css-i5q14k-MuiDayCalendar-header {
+    gap: 2px !important;
+  }
+
+  .search-field {
+    margin-right: 8px;
+  }
+
+  .sectiontitle {
+    display: block;
+    text-align: left;
+  }
+
+  .addbtn {
+    max-width: 100%;
+  }
+
+  .parking-info-header span {
+    padding-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .logininput {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .main_wrrpr.active .sidebar_wrrpr {
+    width: 50px;
+  }
+
+  .deletepopup-section .MuiTypography-h6 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .deletepopup-section .MuiPaper-rounded {
+    margin: 10px;
+  }
+
+  .logintitle .logotitle {
+    font-size: 18px;
+    padding: 27px 0;
+  }
+
+  .MuiDateRangeCalendar-monthContainer .MuiPickersSlideTransition-root {
+    min-height: 280px !important;
+  }
+
+  .login-outerdiv {
+    height: 90vh;
+  }
+
+  .doclabel {
+    font-size: 14px;
+  }
+
+  .loginlabel {
+    font-size: 18px;
+  }
+
+  .login-outerdiv .loginsection {
+    padding: 38px 25px 70px 25px;
+  }
+
+  .loginfooter span {
+    font-size: 14px;
+  }
+
+  .sectiontitle {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .popup-section .MuiPaper-elevation {
+    padding: 30px 20px 40px 20px;
+  }
+
+  .model-input {
+    width: 100%;
+  }
+
+  .row-popup {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  .popup-button {
+    gap: 12px;
+  }
+
+  .btncontrol, .btncontrol1 {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .btncontrol1 {
+    padding: 12px 30px;
+  }
+
+  .popup-section .MuiPaper-elevation {
+    margin: 10px;
+  }
+
+  .main_body {
+    padding: 30px 9px;
+  }
+
+  .popup-section .MuiPaper-elevation .popup-title-cross {
+    right: 0;
+  }
+
+  .imagepopup-section .MuiPaper-elevation .popup-title-cross {
+    right: 0;
+  }
+
+  .MuiTablePagination-root .MuiTablePagination-toolbar {
+    padding-left: 0;
+  }
+
+  .MuiTablePagination-root .custom-pagination {
+    margin-left: 0;
+  }
+
+  .popup-section .MuiPaper-elevation .popup-title {
+    font-size: 24px;
+  }
+
+  .popup-input {
+    max-width: 100%;
+  }
+
+  .section-inner-workload {
+    padding: 10px;
+  }
+
+  .customCalendar .MuiPickersDay-root {
+    max-width: 30px !important;
+    max-height: 30px !important;
+    margin: 4px;
+  }
+
+  .customCalendar .MuiDayCalendar-header {
+    justify-content: space-between;
+  }
+
+  .customCalendar .MuiDayCalendar-header .MuiDayCalendar-weekDayLabel {
+    width: 34px;
+    height: 38px;
+  }
+
+  .customCalendar button {
+    font-size: 14px;
+  }
+
+  .customCalendar .MuiDayCalendar-weekContainer {
+    justify-content: left;
+  }
+
+  .customCalendar .MuiPickersSlideTransition-root {
+    min-width: 100%;
+  }
+
+  .search-field {
+    min-width: 130px;
+  }
+
+  .parking-map-search-right .search-field {
+    max-width: 210px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+
+  .customCalendar button {
+    font-size: 13px;
+  }
+
+  .section-inner-workload {
+    padding: 7px;
+  }
+
+  .changepassword-outerdiv .change-password-section {
+    padding: 38px 15px 70px 15px;
+  }
+
+  .change-password-buttoncontrol {
+    padding: 12px 20px;
+  }
+
+  .change-password-logo {
+    max-width: 106px;
+    width: 100%;
+  }
+
+  .customCalendar .MuiPickersSlideTransition-root {
+    min-height: 200px !important;
+  }
+
+  .addbtn {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .parking-map-search-right .search-field {
+    max-width: 180px;
+    margin-right: 75px;
+  }
+
+}

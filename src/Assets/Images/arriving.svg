@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" >
+  <title>Indicator Down</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M16.879 36.878l13.994 13.994.012.012L33 53l16.121-16.122a3 3 0 0 0-4.242-4.242L36 41.516V11.999a3 3 0 0 0-6 0v29.515l-8.879-8.878a3 3 0 0 0-4.242 4.242z"
+  fill="url(#paint0_linear_196_15909)"></path>
+  <defs>
+<linearGradient id="paint0_linear_196_15909" x1="-1.64508e-07" y1="9.95498" x2="22.3987" y2="9.95498" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1D91DE"/>
+<stop offset="1" stop-color="#1D47A9"/>
+</linearGradient>
+</defs>
+</svg>

@@ -9,7 +9,6 @@ import ParkingInfo from "Pages/Dashboard/ParkingInfo";
 import Password from "Pages/Auth/Password";
 
 const MyRoutes = () => {
-
   return (
     <Router>
       <Routes>
